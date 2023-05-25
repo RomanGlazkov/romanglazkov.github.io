@@ -14,6 +14,24 @@
         })(window,document,'script','dataLayer','GTM-TNHJMQL');
     </script>
     <!-- End Google Tag Manager -->
+
+    <!-- ACTM -->
+    <script>
+        (function (window, document, dataLayerName, containerID) {
+            window[dataLayerName] = window[dataLayerName] || [];
+            window[dataLayerName].push({ 'start': new Date().getTime(), event: 'actm-js' });
+            var firstScript = document.getElementsByTagName('script')[0];
+            var script = document.createElement('script');
+            var dl = dataLayerName !== 'acDataLayer' ? '&l=' + dataLayerName : '';
+            script.async = true;
+            script.src = 'https://pxl.roman-glazkov.dev.altkraft.com/actm/js/actm.js?id=' + containerID + dl;
+            script.type = 'module';
+            if (firstScript && firstScript.parentNode) {
+                firstScript.parentNode.insertBefore(script, firstScript);
+            }
+        }(window, document, 'acDataLayer', 'ATM-Jar5P9APgbg8W4ZT'));
+    </script>
+    <!-- End ACTM -->
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
