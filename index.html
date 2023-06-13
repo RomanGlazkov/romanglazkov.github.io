@@ -59,18 +59,6 @@
 
     <!-- PWA push -->
     <script src="https://pxl.roman-glazkov.dev.altkraft.com/ak_container.js?id=MXwyMg.." ></script>
-</head>
-<body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TNHJMQL" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-    <button onclick="clickHandler()">Subscribe</button>
-
-    <div id="root"></div>
-    <script type="text/javascript" src="./main.ceb7cc6b.js"></script>
     <script>
         const akPush = new AkPush();
 
@@ -83,5 +71,17 @@
             }).catch((e) => debug("Can't send open action ", e));
         }
     </script>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TNHJMQL" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <button onclick="clickHandler()">Subscribe</button>
+
+    <div id="root"></div>
+    <script type="text/javascript" src="./main.ceb7cc6b.js"></script>
 </body>
 </html>
