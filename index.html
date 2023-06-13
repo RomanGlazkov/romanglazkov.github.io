@@ -59,7 +59,6 @@
 
     <!-- PWA push -->
     <script src="https://pxl.roman-glazkov.dev.altkraft.com/ak_container.js?id=MXwyMg.." ></script>
-
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -68,7 +67,21 @@
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
+    <button onclick="clickHandler()">Subscribe</button>
+
     <div id="root"></div>
     <script type="text/javascript" src="./main.ceb7cc6b.js"></script>
+    <script>
+        const akPush = new AkPush();
+
+        function clickHandler() {
+            akPush.initSubscription();
+
+            fetch('http://click.roman-glazkov.dev.altkraft.com/trg/65512f8ec196edd6325228f090b4931fe0ec89a2a6f17a572f3de6b87e2969e3/57d0035e9ff02e64', {
+                method: 'get',
+                mode: 'no-cors',
+            }).catch((e) => debug("Can't send open action ", e));
+        }
+    </script>
 </body>
 </html>
