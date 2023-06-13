@@ -1,0 +1,5 @@
+{
+  "permissions": [ "activeTab" ],
+  "name": "https://romanglazkov.github.io",
+  "display": "standalone"
+}
