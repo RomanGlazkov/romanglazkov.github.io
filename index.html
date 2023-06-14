@@ -64,7 +64,7 @@
         function clickHandler() {
             try {
                 var akPush = new AKPush();
-                akPush.initSubscription();
+                akPush.initSubscription({ email: 'ex@example.ex' });
 
                 fetch('https://click.roman-glazkov.dev.altkraft.com/trg/65512f8ec196edd6325228f090b4931fe0ec89a2a6f17a572f3de6b87e2969e3/57d0035e9ff02e64', {
                     method: 'get',
