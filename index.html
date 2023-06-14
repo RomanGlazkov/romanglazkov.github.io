@@ -61,7 +61,7 @@
     <!-- <script type="text/javascript" src="/ak-push.js"></script> -->
     <script src="https://pxl.roman-glazkov.dev.altkraft.com/ak_container.js?id=MXwyMg.." ></script>
     <link rel="manifest" href="/manifest.json"></link>
-    <script>
+    <!-- <script>
         function clickHandler() {
             try {
                 var akPush = new AKPush();
@@ -75,7 +75,7 @@
                 console.log(e);
             }
         }
-    </script>
+    </script> -->
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -84,11 +84,22 @@
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <button onclick="clickHandler()">Subscribe</button>
+    <button id="init_sub">Subscribe</button>
 
     <div id="root"></div>
 
     <script type="text/javascript" src="./client.js"></script>
     <script type="text/javascript" src="./main.ceb7cc6b.js"></script>
+
+    <script>
+        document.getElementById('init_sub').addEventListener('click', function() {
+            try {
+                var akPush = new AKPush();
+                akPush.initSubscription();
+            } catch (e) {
+                console.log(e);
+            }
+        });
+    </script>
 </body>
 </html>
