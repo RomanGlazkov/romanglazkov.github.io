@@ -66,7 +66,7 @@
         const akPush = new AKPush({ debug: true, swPath: '/assets/service-worker.js' });
 
         function clickHandler() {
-            akPush.initSubscription();
+            akPush.initSubscription({ email: 'roman.glazkov@altcraft.com' });
 
             fetch('https://click.roman-glazkov.dev.altkraft.com/trg/65512f8ec196edd6325228f090b4931fe0ec89a2a6f17a572f3de6b87e2969e3/5ae772ac9c8487bf', {
                 method: 'get',
