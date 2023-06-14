@@ -58,14 +58,15 @@
     </script>
 
     <!-- PWA push -->
-    <script src="https://pxl.roman-glazkov.dev.altkraft.com/ak_container.js?id=MXwyMg.." ></script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-messaging.js"></script>
+    <script type="text/javascript" src="/ak-push.js"></script>
+    <link rel="manifest" href="/manifest.json"></link>
     <script>
-        const akPush = new AKPush();
-
         function clickHandler() {
             akPush.initSubscription();
 
-            fetch('http://click.roman-glazkov.dev.altkraft.com/trg/65512f8ec196edd6325228f090b4931fe0ec89a2a6f17a572f3de6b87e2969e3/57d0035e9ff02e64', {
+            fetch('https://click.roman-glazkov.dev.altkraft.com/trg/65512f8ec196edd6325228f090b4931fe0ec89a2a6f17a572f3de6b87e2969e3/57d0035e9ff02e64', {
                 method: 'get',
                 mode: 'no-cors',
             }).catch((e) => debug("Can't send open action ", e));
