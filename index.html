@@ -63,6 +63,8 @@
     <script type="text/javascript" src="/ak-push.js"></script>
     <link rel="manifest" href="/manifest.json"></link>
     <script>
+        const akPush = new AKPush({ debug: true, swPath: '/assets/service-worker.js' });
+
         function clickHandler() {
             akPush.initSubscription();
 
