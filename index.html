@@ -63,32 +63,12 @@
                };
                window[popupFunc].last_init = 1 * new Date()
                window['ACPopupFuncNamePlaceholder'] = popupFunc;
+               script.async = true;
                script.src = 'https://pxl.roman-glazkov.dev.altkraft.com' + '/popup/v1/js/popupLibrary.js';
-               script.defer = true;
-               document.head.append(script);
+               firstScript.parentNode.insertBefore(script, firstScript);
         })('acpopup');
 
     </script>
-
-
-    <script>
-
-        (function (popupFunc) {
-            var script = document.createElement('script');
-            var firstScript = document.getElementsByTagName('script')[0];
-            window[popupFunc] = window[popupFunc] || function () {
-                (window[popupFunc].actions = window[popupFunc].actions || []).push(arguments);
-            };
-            window[popupFunc].last_init = 1 * new Date()
-            window['ACPopupFuncNamePlaceholder'] = popupFunc;
-            script.src = 'https://pxl.roman-glazkov.dev.altkraft.com' + '/popup/v1/js/popupLibrary.js';
-            script.defer = true;
-            firstScript.parentNode.insertBefore(script, firstScript);
-            document.head.append(script);
-        })('acpopup');
-
-    </script>
-
 
     <!-- popupLibrary END -->
 
@@ -129,7 +109,7 @@
     <script type="text/javascript" src="./client.js"></script>
     <script type="text/javascript" src="./main.ceb7cc6b.js"></script>
 
-    <script>
+    <!-- <script>
         document.getElementById('init_sub').addEventListener('click', function() {
             try {
                 var akPush = new AKPush();
@@ -138,19 +118,6 @@
                 console.log(e);
             }
         });
-    </script>
-
-    <script>
-
-        acpopup('create', 'AP-7gg4yetg5diiszphK');
-        acpopup('show', 'AP-7gg4yetg5diiszphK');
-
-    </script>
-    <script>
-
-        acpopup('create', 'AP-UDGEyQNvdYMikg_C');
-        acpopup('show', 'AP-UDGEyQNvdYMikg_C');
-
-    </script>
+    </script> -->
 </body>
 </html>
