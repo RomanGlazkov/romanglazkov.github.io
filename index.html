@@ -64,7 +64,8 @@
                window[popupFunc].last_init = 1 * new Date()
                window['ACPopupFuncNamePlaceholder'] = popupFunc;
                script.src = 'https://pxl.roman-glazkov.dev.altkraft.com' + '/popup/v1/js/popupLibrary.js';
-               firstScript.parentNode.insertBefore(script, firstScript);
+               script.defer = true;
+               document.head.append(script);
         })('acpopup');
 
     </script>
@@ -81,7 +82,9 @@
             window[popupFunc].last_init = 1 * new Date()
             window['ACPopupFuncNamePlaceholder'] = popupFunc;
             script.src = 'https://pxl.roman-glazkov.dev.altkraft.com' + '/popup/v1/js/popupLibrary.js';
+            script.defer = true;
             firstScript.parentNode.insertBefore(script, firstScript);
+            document.head.append(script);
         })('acpopup');
 
     </script>
