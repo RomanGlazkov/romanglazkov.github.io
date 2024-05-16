@@ -87,7 +87,32 @@
 
     <p class="jessy">Element with class .jessy</p>
 
+    <button id="item_view">Send view event</button>
+
     <script type="text/javascript" src="./client.js"></script>
     <script type="text/javascript" src="./main.ceb7cc6b.js"></script>
+    <script>
+        document.getElementById('item_view').addEventListener('click', () => {
+            dataLayer.push({
+                "ecommerce": {
+                    "currencyCode": "RUB",
+                    "detail": {
+                        "products": [
+                            {
+                                "id": "P15432",
+                                "name" : "Футболка",
+                                "price": 477.60,
+                                "brand": "Яндекс / Яndex",
+                                "category": "Одежда/Мужская одежда/Футболки",
+                                "variant" : "Красный цвет",
+                                "list": "Результаты поиска",
+                                "position": 1
+                            }
+                        ]
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>
