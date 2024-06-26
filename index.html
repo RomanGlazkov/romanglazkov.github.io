@@ -73,6 +73,10 @@
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/97304545" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
+
+    <!-- ak-push SDK -->
+    <script type="text/javascript" src="/ak-push.js"></script>
+    <link rel="manifest" href="/manifest.json"></link>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -81,7 +85,7 @@
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <button id="init_sub">Subscribe</button>
+    <button id="init_sub">Subscribe to push</button>
 
     <div id="root"></div>
 
@@ -90,7 +94,7 @@
     <button id="item_view" class="btn">Send YM view event</button>
     <button id="purchase_event" class="btn">Send GTM purchase event</button>
 
-    <script type="text/javascript" src="./client.js"></script>
+    <!-- Client routing -->
     <script type="text/javascript" src="./main.ceb7cc6b.js"></script>
     <script>
         document.getElementById('item_view').addEventListener('click', () => {
