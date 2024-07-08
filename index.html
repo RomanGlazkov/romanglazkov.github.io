@@ -75,7 +75,7 @@
     <!-- /Yandex.Metrika counter -->
 
     <!-- ak-push SDK -->
-    <script type="text/javascript" src="/ak-push.js"></script>
+    <script src="https://pxl.roman-glazkov.dev.altkraft.com/ak_container.js?id=MXwxMQ=="></script>
     <link rel="manifest" href="/manifest.json"></link>
 </head>
 <body>
@@ -98,7 +98,8 @@
     <script type="text/javascript" src="./main.ceb7cc6b.js"></script>
     <script>
         document.getElementById('init_sub').addEventListener('click', () => {
-            new AKPush().initSubscription({ email: 'rskaymanrr@blinklist.com' })
+            const email = prompt('Enter an email for subscription');
+            new AKPush().initSubscription({ email });
         });
 
         document.getElementById('item_view').addEventListener('click', () => {
