@@ -85,7 +85,10 @@
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <button id="init_sub">Subscribe to push</button>
+    <button id="init_sub" class="btn">Subscribe to push</button>
+
+    <p>If you want to subscribe from Firefox/Safari, please try:</p>
+    <button id="init_explicit_sub" class="btn">Subscribe explicitly</button>
 
     <div id="root"></div>
 
@@ -100,6 +103,10 @@
         document.getElementById('init_sub').addEventListener('click', () => {
             const email = prompt('Enter an email for subscription');
             new AKPush().initSubscription({ email });
+        });
+
+        document.getElementById('init_explicit_sub').addEventListener('click', () => {
+            new AKPush().initSubscription({ email: 'roman.glazkov@altcraft.com' });
         });
 
         document.getElementById('item_view').addEventListener('click', () => {
