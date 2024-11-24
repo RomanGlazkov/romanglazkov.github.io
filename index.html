@@ -105,7 +105,7 @@
             const value = prompt('Enter an email or user_id for subscription');
 
             if (value && value.trim().length > 0) {
-                const data = value.includes('@') ? { email: data } : { user_id: data };
+                const data = value.includes('@') ? { email: value } : { user_id: value };
 
                 new AKPush().initSubscription(data);
             }
