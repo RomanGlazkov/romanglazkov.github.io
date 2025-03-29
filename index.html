@@ -79,125 +79,12 @@
     <!-- End ACTM -->
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TNHJMQL" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-    <button id="init_sub" class="btn">Subscribe to push</button>
-
-    <p>If you want to subscribe from Firefox/Safari, please try:</p>
-    <button id="init_explicit_sub" class="btn">Subscribe explicitly</button>
-
-    <div id="root"></div>
-
     <div id="app"></div>
     <script type="module" src="/src/index.tsx"></script>
 
-    <p class="jessy">Element with class .jessy</p>
-
-    <button id="item_view" class="btn">Send YM view event</button>
-    <button id="purchase_event" class="btn">Send GTM purchase event</button>
-    <button id="jessy_event">Send custom analytics event</button>
+    <div id="root"></div>
 
     <!-- Client routing -->
     <script type="text/javascript" src="./main.26180800.js"></script>
-    <script>
-        document.getElementById('init_sub').addEventListener('click', () => {
-            const value = prompt('Enter an email or user_id for subscription');
-
-            if (value && value.trim().length > 0) {
-                const data = value.includes('@') ? { email: value } : { user_id: value };
-
-                new AKPush().initSubscription(data);
-            }
-        });
-
-        document.getElementById('init_explicit_sub').addEventListener('click', () => {
-            new AKPush().initSubscription();
-        });
-
-        // document.getElementById('item_view').addEventListener('click', () => {
-        //     dataLayer.push({
-        //         "ecommerce": {
-        //             "currencyCode": "RUB",
-        //             "detail": {
-        //                 "products": [
-        //                     {
-        //                         "id": "P15432",
-        //                         "name" : "Футболка",
-        //                         "price": 477.60,
-        //                         "brand": "Яндекс / Яndex",
-        //                         "category": "Одежда/Мужская одежда/Футболки",
-        //                         "variant" : "Красный цвет",
-        //                         "list": "Результаты поиска",
-        //                         "position": 1
-        //                     }
-        //                 ]
-        //             }
-        //         }
-        //     });
-        // });
-
-        // document.getElementById('purchase_event').addEventListener('click', () => {
-        //     dataLayer.push({
-        //     event: "purchase",
-        //     ecommerce: {
-        //         transaction_id: "T_12345",
-        //         // Sum of (price * quantity) for all items.
-        //         value: 72.05,
-        //         tax: 3.60,
-        //         shipping: 5.99,
-        //         currency: "USD",
-        //         coupon: "SUMMER_SALE",
-        //         items: [
-        //             {
-        //                 item_id: "SKU_12345",
-        //                 item_name: "Stan and Friends Tee",
-        //                 affiliation: "Google Merchandise Store",
-        //                 coupon: "SUMMER_FUN",
-        //                 discount: 2.22,
-        //                 index: 0,
-        //                 item_brand: "Google",
-        //                 item_category: "Apparel",
-        //                 item_category2: "Adult",
-        //                 item_category3: "Shirts",
-        //                 item_category4: "Crew",
-        //                 item_category5: "Short sleeve",
-        //                 item_list_id: "related_products",
-        //                 item_list_name: "Related Products",
-        //                 item_variant: "green",
-        //                 location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
-        //                 price: 10.01,
-        //                 quantity: 3
-        //             },
-        //             {
-        //                 item_id: "SKU_12346",
-        //                 item_name: "Google Grey Women's Tee",
-        //                 affiliation: "Google Merchandise Store",
-        //                 coupon: "SUMMER_FUN",
-        //                 discount: 3.33,
-        //                 index: 1,
-        //                 item_brand: "Google",
-        //                 item_category: "Apparel",
-        //                 item_category2: "Adult",
-        //                 item_category3: "Shirts",
-        //                 item_category4: "Crew",
-        //                 item_category5: "Short sleeve",
-        //                 item_list_id: "related_products",
-        //                 item_list_name: "Related Products",
-        //                 item_variant: "gray",
-        //                 location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
-        //                 price: 21.01,
-        //                 promotion_id: "P_12345",
-        //                 promotion_name: "Summer Sale",
-        //                 quantity: 2
-        //             }
-        //         ]
-        //     }
-        //     });
-        // });
-    </script>
 </body>
 </html>
