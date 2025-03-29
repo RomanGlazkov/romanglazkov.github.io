@@ -4,11 +4,19 @@
   "description": "Dev stand for testing and training",
   "main": "index.ts",
   "scripts": {
-    "start": "vite --open --strictPort"
+    "start": "vite --open --strictPort",
+    "build": "vite build"
   },
   "author": "Roman Glazkov",
   "license": "ISC",
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
   "devDependencies": {
+    "@types/react": "^19.0.12",
+    "@types/react-dom": "^19.0.4",
+    "typescript": "^5.8.2",
     "vite": "^6.2.3"
   }
 }
