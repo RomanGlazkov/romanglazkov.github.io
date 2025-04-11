@@ -1,4 +1,4 @@
-import Button from '@mui/material/Button';
+import { Button, Input } from '@mui/material';
 
 function App() {
     const handleSubscribe = () => {
@@ -35,6 +35,7 @@ function App() {
                 Subscribe explicitly
             </Button>
             <p className="jessy">Element with class .jessy</p>
+            <Input id="test-input" placeholder="Enter something here..." />
         </>
     );
 }
