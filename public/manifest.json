@@ -1,10 +1,7 @@
 {
   "name": "https://romanglazkov.github.io",
   "display": "standalone",
-  "short_name": "MySite",
-  "start_url": "/",
-  "background_color": "#ffffff",
-  "theme_color": "#000000",
+  "permissions": ["activeTab"],
   "icons": [
         {
             "src": "/apple-touch-icon-55x55.png",
