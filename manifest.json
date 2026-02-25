@@ -1,7 +1,6 @@
 {
   "name": "https://romanglazkov.github.io",
   "display": "standalone",
-  "permissions": ["activeTab"],
   "icons": [
         {
             "src": "/apple-touch-icon-55x55.png",
