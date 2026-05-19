@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.altcraft.altcraftmobile",
+      "sha256_cert_fingerprints": [
+        "BF:EF:A1:53:99:C1:B5:3B:99:8B:65:1F:65:A5:83:50:8F:22:82:EF:64:0C:D1:F8:67:83:5E:DE:0B:0A:54:BD"
+      ]
+    }
+  }
+]
